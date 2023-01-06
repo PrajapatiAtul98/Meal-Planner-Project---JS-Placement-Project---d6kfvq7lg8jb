@@ -40,7 +40,7 @@ submitbtn.addEventListener("click" , () => {
   function addMealPlanToContainer( targetCalories ) {
          // Fetch data from the Spoonacular API
     
-        fetch(`https://api.spoonacular.com/mealplanner/generate?timeFrame=day&targetCalories=${targetCalories}&apiKey=621e41e2de6742e19d67e9e82f67deba
+        fetch(`https://api.spoonacular.com/mealplanner/generate?timeFrame=day&targetCalories=${targetCalories}&apiKey=bb495a4de1df4b729047f9e934502ada
         `)
           .then(response => response.json())
           .then(data => {
@@ -83,7 +83,7 @@ submitbtn.addEventListener("click" , () => {
   
   async function getImageInformation(id) {
   const data = await
-      fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=621e41e2de6742e19d67e9e82f67deba
+      fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=bb495a4de1df4b729047f9e934502ada
       `)
   const res = await data.json();
   console.log("image:")
@@ -94,7 +94,7 @@ submitbtn.addEventListener("click" , () => {
 // Add the recipe to the page
 
 async function getRecipe(id) {
-  const data = await fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=621e41e2de6742e19d67e9e82f67deba
+  const data = await fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=bb495a4de1df4b729047f9e934502ada
   `)
   const res = await data.json();
 
