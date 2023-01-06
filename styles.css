@@ -1,1 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(241, 177, 186, 0.4);
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif
+}
+header.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(248, 8, 8, 0.5);
+    color: brown;
+    width: 70vw;
+    font-size: 4rem;
+  
+}
+.logo p a {
+    color: aliceblue;
+}
+.form ,.meal-timing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(173, 238, 20, 0.7);
+    margin:10px 0 10px 0;
+    width: 70vw;
+}
+.meal-timing{
+    background-color: rgba(244, 240, 247, 0.7);
+}
+form.inputs {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    cursor: pointer; 
+}
+.inputs1 input , .inputs2 select, .physical-activity select, .Generete-Meals {
+    margin: 2px;
+    border: 2px solid rgb(44, 199, 27);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 15px;
+   
+}
+
+.meal-timing {
+    display: flex;
+    flex-direction:row ;
+    
+
+}
+
+div.card {
+    border: 3px solid rgb(137, 216, 11);
+    border-radius: 5px;
+    background-color: rgba(14, 14, 14, 0.2);
+    color: rgb(117, 187, 11);
+    margin: 10px;
+    width: 18rem;
+   
+    
+}
+
+.Generete-Meals {
+    padding: 10px;
+}
+#recipe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(230, 220, 220, 0.5);
+    margin:10px 0 10px 0;
+    width: 70vw;
+}
+
+.my-table th {
+    color: rgb(255, 132, 0);
+}
+table td.stepCell {
+    padding:0 20px 0 20px;  
+}
+.my-table th.stepHeader {
+    padding:0 20px 0 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgba(154, 43, 43, 0.5);
+    width: 70vw;
+}
+
+
+
+@media (max-width: 480px) {
+    body {
+      font-size: 1rem;
+      flex-direction: column;
+    }
+    header {
+        display: none;
+      }
+      .meal-timing {
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        
+    }
+    
+ #container div.card {
+   background-color: rgb(136, 133, 133);
+  color: rgb(243, 27, 27);
+   
+}
+    
+
+  }
+  
+
+
+
+  @media (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* styles for tablets go here */
+    body {
+        font-size: 1.2rem;
+        flex-direction: column;
+      }
+      header {
+          display: none;
+        }
+        .meal-timing {
+          display: flex;
+          flex-direction:column ;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+         
+          
+      }
+      
+   #container div.card {
+     background-color: rgb(136, 133, 133);
+    color: rgb(243, 27, 27);
+     
+  }
+      
+  
+  }
+  
+  
+
 
