@@ -32,7 +32,7 @@ submitbtn.addEventListener("click" , () => {
   }
  
   var targetCalories = BMR;
-  console.log("BMR:",W,H,A ,genderValue,activityLevel,targetCalories)
+  
   
 
 
