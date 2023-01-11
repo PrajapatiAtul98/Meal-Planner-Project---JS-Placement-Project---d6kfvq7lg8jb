@@ -1,64 +1,95 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Ap's Meal Planner</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="App.js" defer></script>
-    <script src="b.js" defer></script>
+    <title>Meal Planner</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header class="logo">
-        <p><a href="#">Ap's Meal Planner</a></p>
-    </header>
     <main>
-        <form class="form" method="post">
-            <div class="inputs1">
-                <input id="weight" placeholder="Enter Weight in Kg" />
-                <input id="height" placeholder="Enter Height in cm" />
-                <input id="age" placeholder="Enter Age" /><br />
-            </div><br />
-            <div class="inputs2">
-                <span>Gender: </span>
-                <select id="gender">
-                    <option value="male ">male</option>
-                    <option value="female">female</option>
-                </select>
-            </div><br />
-            <lable class="physical-activity">Physical Activity:
-                <select id="activity">
-                    <option value="light">light</option>
-                    <option value="moderate">moderate</option>
-                    <option value="active">active</option>
-                </select>
-            </lable>
-            <br />
-            <button class="Generete-Meals" id="submit-btn" type="button">Generete Meals</button>
+        <nav class="navclass">
+            AP's Meal Planner
+        </nav>
+
+        <form action="#">
+            <div class="inputtype1">
+                <div id="heightValidation">
+                    <input class="getinput" type="text" placeholder="Enter Height" id="height" />
+                    <span id="errorHeight"></span>
+                </div>
+                <div id="weightValidation">
+                    <input class="getinput" type="text" placeholder="Enter Weight" id="weight" />
+                    <span id="errorWeight"></span>
+                </div>
+                <div id="ageValidation">
+                    <input class="getinput" type="text" placeholder="Enter Age" id="age" />
+                    <span id="errorAge"></span>
+                </div>
+            </div>
+
+            <div class="inputtype2">
+                <div id="gendervalidation">
+                    <select id="gender" class="getinput text">
+                        <option selected disabled hidden value="select gender">select gender</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                    <span id="errorGender"></span>
+                </div>
+                <div id="activityValidation">
+                    <select id="activity" class="getinput text text2">
+                        <option selected hidden disabled>select physical activity</option>
+                        <option value="light">light</option>
+                        <option value="moderate">moderate</option>
+                        <option value="active">active</option>
+                    </select>
+                    <span id="errorActivity"></span>
+                </div>
+            </div>
+
+            <div class="inputtype3">
+                <input type="submit" id="generateBtn" value="Generate Meals" />
+            </div>
+
+
         </form>
 
-        <div class="meal-timing" id="container">
-            
+        <!-- cards section -->
+        <div class="extracard-main" id="cardsid">
+
         </div>
 
-        <div id="recipe">
-            
+
+        <div class="cards">
+            <section class="place-item" id="cardsid">
+                <!-- mealContainer -->
+            </section>
+
+            <!-- recipeSection -->
+            <div class="recipetablemaindiv">
+                <section id="ingradients">
+                    <!-- ingradients -->
+                </section>
+                <section id="stepSection">
+
+                </section>
+                <section id="equipmentSection">
+
+                </section>
+            </div>
 
 
-           
+
+            <h4 class="codedBy">Coded By : Ap Creations</h4>
         </div>
 
     </main>
-    <footer>
-        <h6>Coded By : Ap Creations</h6>
-    </footer>
+
 </body>
 
 </html>
-
