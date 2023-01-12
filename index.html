@@ -16,7 +16,7 @@
             AP's Meal Planner
         </nav>
 
-        <form action="#">
+        <form onsubmit="return validateForm()" >
             <div class="inputtype1">
                 <div id="heightValidation">
                     <input class="getinput" type="text" placeholder="Enter Height" id="height" />
@@ -35,7 +35,7 @@
             <div class="inputtype2">
                 <div id="gendervalidation">
                     <select id="gender" class="getinput text">
-                        <option selected disabled hidden value="select gender">select gender</option>
+                        <option  selected hidden value="select gender">select gender</option>
                         <option value="male">male</option>
                         <option value="female">female</option>
                     </select>

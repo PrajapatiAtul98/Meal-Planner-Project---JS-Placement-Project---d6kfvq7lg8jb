@@ -90,7 +90,7 @@ generateBtn.addEventListener("click", () => {
             BMR = BMR * 1.725
         }
     }
-    else {
+    else if (genderValue === "male"){
         BMR = 655.1 + (9.563 * weight) + (1.850 * height) - (4.676 * age)
         if (activityLevel === "light") {
             BMR = BMR * 1.375
@@ -102,6 +102,9 @@ generateBtn.addEventListener("click", () => {
             BMR = BMR * 1.725
           
         }
+    }
+    else{
+        validateForm();
     }
     var calory = BMR;
     console.log("calory",calory);
