@@ -7,7 +7,7 @@ HTML
 CSS
 BOOTSTRAP
 Screenshot of the project
-Screenshot
+
 
 🚀 About Me
 Hey 👋, I'm Atul Kumar Prajapati, aspiring fullstack developer.
