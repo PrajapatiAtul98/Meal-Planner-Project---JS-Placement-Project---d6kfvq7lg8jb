@@ -149,11 +149,13 @@ const btnRecipe = async (data) => {
   let stOverlay = document.createElement("div");
   stOverlay.classList.add("overlay");
   let stepsOl = document.createElement("ol");
+  
   information.analyzedInstructions[0].steps.map((step) => {
     stepsHtml += `
         <li>${step.step}</li>
         `;
   });
+
   stepsOl.innerHTML = stepsHtml;
   let stepsH1 = document.createElement("h3");
   stepsH1.textContent = "STEPS";
