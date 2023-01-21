@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 :root {
-  --primary: #ff5757;
+  --primary: #e65f58;
   --secondary: #e34b1b;
   --light: #ffffff;
 }
@@ -116,6 +116,8 @@ ul li::before {
   left: 50%;
   top: 50%;
 }
+
+/* we can use also spin in -webkit-animation: rotate 1s infinite linear; &  -webkit-transform: rotate(360deg); */
 
 @-webkit-keyframes rotate {
   100% {
