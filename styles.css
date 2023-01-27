@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+
 :root {
   --primary: #4dc13b;
   --secondary: #e34b1b;
@@ -130,7 +130,7 @@ ul li::before {
 }
 
 .footer p {
-  margin: 0;
+  margin-bottom:10px;
 }
 
 /* loader */
