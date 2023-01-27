@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: #7d1187;
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
@@ -94,7 +94,8 @@ ul li::before {
   margin-top: auto;
   width: 100%;
   padding: 5px;
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
+  background-color: chartreuse;
   color: var(--light);
   text-align: center;
 }
@@ -123,4 +124,17 @@ ul li::before {
   100% {
     -webkit-transform: rotate(360deg);
   }
+}
+.navbar-brand{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.navbar-brand .planner-name {
+  color: #ffffff;
+  font-size: 80px;
+  padding-right: 30px;
 }
