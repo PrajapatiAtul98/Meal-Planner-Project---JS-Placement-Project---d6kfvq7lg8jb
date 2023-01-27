@@ -120,7 +120,7 @@ ul li::before {
 }
 
 .footer {
-  margin-top: 20%;
+  margin-top: 22%;
   width: 100%;
   padding: 5px;
   /* background-color: var(--primary); */
@@ -162,11 +162,12 @@ ul li::before {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  height: 60px;
   
 }
 .navbar-brand .planner-name {
-  color: #ffffff;
-  font-size: 80px;
+  color: #fff;
+  /* font-size: 80px; */
   padding-right: 30px;
   font-family: 'Playfair Display', serif;
 }
