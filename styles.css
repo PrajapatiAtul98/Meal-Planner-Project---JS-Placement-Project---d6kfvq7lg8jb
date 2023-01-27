@@ -1,18 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
 :root {
-  --primary: #e65f58;
+  --primary: #4dc13b;
   --secondary: #e34b1b;
   --light: #ffffff;
 }
 
 body {
-  background-color: #7d1187;
+  background-color: #ab80ae;
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
+
+  background-image: url(https://media.istockphoto.com/id/496703035/photo/fresh-made-lemon-yoghurt.jpg?s=612x612&w=0&k=20&c=u5lzzbb86Hs7C2G6TcS4wOYx5MLEdFuAs0AL90AoMJo=);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
 }
 
+.form-font{
+  font-weight: 800;
+  font-size: 20px;
+  color: rgb(18, 190, 38);
+
+}
+.form-control,.form-select{
+  background-color: #ced9ce;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+#submitBtn{
+  background-color: #abeb80;
+  font-size: 20px;
+}
 ul {
   list-style: none;
 }
@@ -33,6 +61,7 @@ ul li::before {
   width: 1em;
   margin-left: -1.3em;
 }
+
 
 .btn-primary {
   background-color: var(--primary);
@@ -91,11 +120,11 @@ ul li::before {
 }
 
 .footer {
-  margin-top: auto;
+  margin-top: 21%;
   width: 100%;
   padding: 5px;
   /* background-color: var(--primary); */
-  background-color: chartreuse;
+  background-color: rgb(75, 138, 12);
   color: var(--light);
   text-align: center;
 }
@@ -116,6 +145,8 @@ ul li::before {
   position: absolute;
   left: 50%;
   top: 50%;
+  background-color: #4dc13b;
+  
 }
 
 /* we can use also spin in -webkit-animation: rotate 1s infinite linear; &  -webkit-transform: rotate(360deg); */
@@ -137,4 +168,5 @@ ul li::before {
   color: #ffffff;
   font-size: 80px;
   padding-right: 30px;
+  font-family: 'Playfair Display', serif;
 }

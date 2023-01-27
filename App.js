@@ -65,13 +65,15 @@ const generateMealsCard = (datas) => {
   let cards = ``;
   mealsDetails.innerHTML = `
   <h1>Nutrients</h1>
-  <div class="d-flex justify-content-center">
+  <div class="d-flex justify-content-center" >
       <p class="px-2">Calories : ${datas?.nutrients?.calories}</p>
       <p class="px-2">Carbohydrates : ${datas.nutrients?.carbohydrates}</p>
       <p class="px-2">Fat : ${datas.nutrients?.fat}</p>
       <p class="px-2">Protein : ${datas.nutrients?.protein}</p>
   </div>
   `;
+
+ 
   datas.meals.map(async (data) => {
     const url = `https://api.spoonacular.com/recipes/${data.id}/information?apiKey=${API_KEY}&includeNutrition=false`;
     let imgURL;
@@ -82,7 +84,9 @@ const generateMealsCard = (datas) => {
       .then((data) => {
         imgURL = data.image;
       });
+      
     cards += `
+                   
         <div class="col-md-4 d-flex justify-content-center mb-2">
             <div class="card baseBlock" style="width: 18rem;">
                 <img src=${imgURL} class="card-img-top"
