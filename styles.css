@@ -120,7 +120,7 @@ ul li::before {
 }
 
 .footer {
-  margin-top: 20%;
+  margin-top: 21.5%;
   width: 100%;
   padding: 5px;
   /* background-color: var(--primary); */
@@ -141,7 +141,7 @@ ul li::before {
   border: 6px solid #ccc;
   border-right-color: #9a0d0d;
   border-radius: 22px;
-  -webkit-animation: rotate 2s infinite linear;
+  -webkit-animation: rotate 1s infinite linear;
   position: absolute;
   left: 50%;
   top: 50%;
