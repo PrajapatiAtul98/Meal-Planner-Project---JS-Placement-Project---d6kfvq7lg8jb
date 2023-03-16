@@ -56,6 +56,7 @@ const getMeals = async (bmr) => {
     })
     .then((data) => {
       datas = data;
+      
     });
   generateMealsCard(datas);
   document.getElementById("loader").style.display = "none";
