@@ -139,9 +139,10 @@ ul li::before {
   width: 0;
   padding: 15px;
   border: 6px solid #ccc;
-  border-right-color: #9a0d0d;
+  border-right-color: #0d7e9a;
+  border-left-color: #34c00d;
   border-radius: 22px;
-  -webkit-animation: rotate 1s infinite linear;
+  -webkit-animation: rotate 2s infinite linear;
   position: absolute;
   left: 50%;
   top: 50%;
