@@ -56,7 +56,6 @@ const getMeals = async (bmr) => {
     })
     .then((data) => {
       datas = data;
-      
     });
   generateMealsCard(datas);
   document.getElementById("loader").style.display = "none";
@@ -74,7 +73,6 @@ const generateMealsCard = (datas) => {
   </div>
   `;
 
- 
   datas.meals.map(async (data) => {
     const url = `https://api.spoonacular.com/recipes/${data.id}/information?apiKey=${API_KEY}&includeNutrition=false`;
     let imgURL;
@@ -85,7 +83,7 @@ const generateMealsCard = (datas) => {
       .then((data) => {
         imgURL = data.image;
       });
-      
+
     cards += `
                    
         <div class="col-md-4 d-flex justify-content-center mb-2">
@@ -154,7 +152,7 @@ const btnRecipe = async (data) => {
   let stOverlay = document.createElement("div");
   stOverlay.classList.add("overlay");
   let stepsOl = document.createElement("ol");
-  
+
   information.analyzedInstructions[0].steps.map((step) => {
     stepsHtml += `
         <li>${step.step}</li>
